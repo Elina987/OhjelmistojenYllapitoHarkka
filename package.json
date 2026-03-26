@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "coverage": "nyc mocha",
+    "coverage": "c8 mocha",
     "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
   "keywords": [],
@@ -19,7 +19,8 @@
     "mocha": "^11.7.5",
     "nyc": "^18.0.0"
   },
-  "nyc": {
+  "c8": {
+    "all": true,
     "include": [
       "src/**/*.js"
     ],
@@ -31,6 +32,7 @@
       "text",
       "lcov"
     ],
-    "all": true
+    "Instrument": true,
+    "sourceMap": true
   }
 }
