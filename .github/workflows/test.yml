@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4 ## vaihdettu 4 -> 5
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4 ### vaihdettu 4 -> 5
         with:
           node-version: 22
 
@@ -28,7 +28,8 @@ jobs:
         uses: coverallsapp/github-action@v2
         with:
           path-to-lcov: coverage/lcov.info ## ...js nimet läheti koska sisennystä ei ollut
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+        ## env:
+        ## GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 ## :)
