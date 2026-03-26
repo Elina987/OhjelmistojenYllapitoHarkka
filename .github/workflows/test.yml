@@ -25,6 +25,6 @@ jobs:
         run: npm run coverage
 
       - name: Send coverage to Coveralls
-        run: c8 report --reporter=lcov | npx coveralls
+        uses: coverallsapp/github-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
