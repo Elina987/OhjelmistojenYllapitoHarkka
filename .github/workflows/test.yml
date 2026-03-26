@@ -27,10 +27,8 @@ jobs:
       - name: Send coverage to Coveralls
         uses: coverallsapp/github-action@v2
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }
-          path-to-lcov: coverage/lcov.info
-
-        ## env:
-        ##   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          path-to-lcov: coverage/lcov.info ## ...js nimet läheti koska sisennystä ei ollut
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 ## :)
