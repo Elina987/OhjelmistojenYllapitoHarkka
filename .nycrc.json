@@ -1,0 +1,16 @@
+{
+  "include": [
+    "src/**/*.js"
+  ],
+  "exclude": [
+    "src/.internal/**",
+    "test/**"
+  ],
+  "reporter": [
+    "text",
+    "lcov",
+    "html"
+  ],
+  "all": true,
+  "check-coverage": false
+}
