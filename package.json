@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "coverage": "c8 mocha"
+    "coverage": "c8 mocha",
+    "coveralls": "c8 report --reporter=lcov | coveralls"
   },
   "keywords": [],
   "author": "",
