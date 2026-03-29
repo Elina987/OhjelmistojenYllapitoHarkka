@@ -7,6 +7,7 @@ describe("drop()", () => {
   });
 
   it("should drop n elements", () => {
+    // test for dropping n elements
     expect(drop([1, 2, 3], 2)).to.deep.equal([3]);
   });
 

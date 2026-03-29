@@ -3,10 +3,12 @@ import isBoolean from "../src/isBoolean.js";
 
 describe("isBoolean()", () => {
   it("should return true for true", () => {
+    // test for true
     expect(isBoolean(true)).to.equal(true);
   });
 
   it("should return true for false", () => {
+    // test for false
     expect(isBoolean(false)).to.equal(true);
   });
 
@@ -15,6 +17,7 @@ describe("isBoolean()", () => {
   });
 
   it("should return false for null", () => {
+    // test for null
     expect(isBoolean(null)).to.equal(false);
   });
 
@@ -23,6 +26,7 @@ describe("isBoolean()", () => {
   });
 
   it("should return false for string", () => {
+    // test for string
     expect(isBoolean("true")).to.equal(false);
   });
 });
