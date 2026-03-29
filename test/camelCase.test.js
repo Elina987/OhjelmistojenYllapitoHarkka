@@ -1,6 +1,8 @@
 import { expect } from "chai";
 import camelCase from "../src/camelCase.js";
 
+// Testing the camelCase function with various cases
+
 describe("camelCase()", () => {
   it("should convert string to camelCase", () => {
     expect(camelCase("Foo Bar")).to.equal("fooBar");
